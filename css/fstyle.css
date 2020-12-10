@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 
 *{
     padding: 0;
@@ -8,7 +10,7 @@
 /*corregir posicion del logo*/
 .header-container-img{
     display: left;
-    margin: 10px 10px 10px 17px;
+    margin: 10px 10px 10px 20px;
     display: inline-flex;
 }
 /*____________EstiloHeader_______________*/
@@ -42,11 +44,13 @@ header .contenedor{
 /*____________EstiloHeader_______________*/
 
 /*___________EstiloBoton_______________*/
-btnNext{
+.btnNext{
     width: 100%;
     height: 70px;
-    background: black;
+    background: white;
+    margin-top: 50px;
     display: flex;
+    text-align: right;
 }
 
 .btn{
@@ -55,7 +59,7 @@ btnNext{
     font-size: 20px;
     margin: auto;
     border-style: none;
-    background: #6a994e;
+    background: #03045e;
     color: white;
     transition: all 300ms;
     border-radius: 10px;
@@ -63,17 +67,18 @@ btnNext{
 }
 
 .btn:hover{
-    background: #a7c957;
+    background: #023e8a;
     transition: all 300ms;
     cursor: pointer;
-    box-shadow: 1px 1px 10px 0px green;
+    box-shadow: 1px 1px 10px 0px #0077b6;
 }
 
 .btn:active{
-    background: #f2e8cf;
+    background: #0096c7;
     transition: all 100ms;
-    color: #607D69;
-    transform: scale(0.9);
+    color: white;
+    /*------modificar-----*/
+    transform: scale(1);
 }
 /*___________EstiloBoton_______________*/
 
@@ -119,13 +124,171 @@ header label{
     transform: translateX(0%);
 }
 
+@media (min-width:1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        background: #F0F1F0;
+    }
+    .menu1{
+        border-bottom: none;
+        font-family: 'Open Sans', sans-serif; 
+        color: #1F6394;
+        font-size: 140%;
+    }
+    .menu1:hover{
+        height: 60px;
+        color: #18DDCD; 
+        background: none;
+        transform: scale(1.1);
+        transition: all 300ms;
+    }
+    header label{
+        display: none;
+    }
+       
+}
+
+
 
 /*____________EstiloBarraNav_______________*/
 
 /*____________EstiloSección________________*/
-.des{
+.subgen{
+    display: block;
+    width: 50%;
+    padding: 7px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.des h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 300%;
+    margin-bottom: 20px; 
+    color: #1F6394;
+}
+.des h2:hover{
+        color: #18DDCD; 
+        background: none;
+        transform: scale(1.1);
+        transition: all 300ms;
+}
+
+
+.des p{
+    font-family: 'Open Sans', sans-serif;
+    color: #A9A9A9;
+    margin-bottom: 30px;
     
+}
+.wp h3{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 17px;
+    color: #828484; 
+}
+
+.opcional h4{
+    font-family: 'Open Sans', sans-serif;
+    color: #828484; 
+    margin-top: 10px;
+    margin-bottom: 17px;   
+}
+
+#anhos {
+    background: white;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #18DDCD;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    color: #A9A9A9;
+    font-size: 110%;
+    margin-left: 15px;
+}
+#anhos:hover{
+    border-bottom: 2px solid #297A73;
+    transition: all 300ms;
+    transform: scale(1.1);
+    border-radius: 5px;
+    background: #EBF0F0;
+    cursor: pointer;
+}
+.formulario input[type="radio"],
+.formulario input[type="checkbox"]{
+    display: none;   
+}
+.formulario .radio label,
+.formulario .checkb label {
+    color: #A9A9A9;
+    padding: 5px 15px 5px 51px;
+    margin-bottom: 2px;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.formulario .radio label:hover,
+.formulario .checkb label:hover {
+    background: rgba(45,207,193,0.3);
+}
+.formulario .radio label:before,
+.formulario .checkb label:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    border: 3px solid #18DDCD;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 2px;
+}
+.formulario .checkb label:before {
+    border-radius: 3px;
+}
+.formulario input[type="radio"]:checked + label,
+.formulario input[type="checkbox"]:checked + label{
+    padding: 5px 15px;
+    background: #0EAB92;
+    color: white;
     
     
 }
+.formulario input[type="radio"]:checked + label:before,
+.formulario input[type="checkbox"]:checked + label:before{
+    display: none;
+}
+
 /*____________EstiloSección________________*/
+/*____________EstiloFooter________________*/
+
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    color: #828484;
+    margin-top: 8%;
+    margin-left: 17px;
+    margin-right: 17px;
+    padding-top: 10px;
+    border-top: 2px solid #A9A9A9; 
+}
+
+
+
+
+/*____________EstiloFooter________________*/
+
+
+
+
+
+

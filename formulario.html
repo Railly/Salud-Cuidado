@@ -13,7 +13,7 @@
     <header class="cabecera">
         <div class="contenedor">
             <figure class="header-container-img">
-                    <img src="./assets/Group 4.svg" alt="Logo-SYC" width="45" height="45">
+                <img src="./assets/Group 4.svg" alt="Logo-SYC" width="45" height="45">
             </figure>
             <input class="btn3" type="checkbox" id="menu-bar">
             <label class="icon-menu" for="menu-bar"></label>
@@ -32,11 +32,22 @@
                 <p>
                     El listado de afecciones subyacentes que figura más abajo no es exhaustivo y solo incluye afecciones cuyos estudios aportan evidencia suficiente para arribar conclusiones.
 
-                    Por favor, complete el siguiente formulario sobre los factores de riesgo.
+                </p>
+                <p>
+                    Por favor, complete el siguiente formulario sobre los factores de riesgo:
                 </p>
             </div>
             <div class="wp">
-                <form action="" class="formulario"></form>
+                <form action="" class="formulario">
+                
+                <div>
+                    <h3>¿Cuántos años tienes?</h3>
+                    
+                    <input type="text" name="edad" id="anhos">
+                    
+                </div>
+                
+                
                 <div class="radio">
                     <h3>Seleccione su sexo:</h3>
 
@@ -84,11 +95,11 @@
                     <label for="checkbox11">Cáncer</label>
 
                 </div>
+                </form>
 
+                <!---------
                 <div class="opcional">
-                    <article>
-                        En el caso de haber marcado cáncer especifique sus datos:
-                    </article>
+    
                     <h4>En qué etapa se encuentra:</h4>
 
                     <form>
@@ -103,14 +114,23 @@
                         </div>
                     </form>
                 </div>
+                --->
             </div>
 
-            <div class="btnNext">
-                <input type="button" class="btn" value="Siguiente">
-            </div>
+
 
 
         </div>
+        <div class="btnNext">
+            <input type="button" onclick="location.href='formulario2.html'" class="btn" value="Continuar">
+        </div>
     </main>
+    
+    <footer>
+        <div class="contenedor">
+           <p class="copy">SyC &copy; 2020</p> 
+        </div>
+    </footer>
 </body>
+
 </html>
