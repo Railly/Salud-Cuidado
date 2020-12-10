@@ -1,0 +1,195 @@
+/*Global Variables*/
+
+:root {
+    --primary-color: #f3f3f3;
+    --secondary-color: #3C3B3B;
+    --terciary-color: #115571;
+    ;
+    --contrast-color: #34AFB4;
+    --primary-light-color: rgb(233, 232, 232);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--primary-light-color);
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--terciary-color);
+    transition: 0.4s;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    line-height: 2;
+}
+
+svg {
+    fill: var(--secondary-color);
+    transition: 0.4s;
+
+}
+figure {
+    width: 7rem;
+    height: 7rem;
+}
+
+body.light-theme.dark-theme svg {
+    fill: var(--primary-color);
+    transition: 0.4s;
+}
+
+/*Header*/
+
+.header {
+    background-color: #fff;
+    font-weight: 600;
+    margin: 0 1rem;
+    margin-bottom: 2.5rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 6px 3px 40px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 3px 40px -19px rgba(0,0,0,0.75);
+box-shadow: 6px 3px 40px -19px rgba(0,0,0,0.75);
+}
+
+.header-container-main {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+.header-container-img {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.github svg:hover,
+.twitter svg:hover,
+.youtube svg:hover,
+.instagram svg:hover {
+    fill: var(--contrast-color);
+    transform: scale(1.2);
+}
+
+.dark-theme .nav-icons .twitter svg:hover,
+.dark-theme .nav-icons .instagram svg:hover {
+    fill: var(--contrast-color);
+}
+
+
+.nav-words ul{
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+}
+
+.nav-words ul li{
+    margin-left: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0rem;
+    font-size: 1.8rem;
+}   
+
+.dark-theme .nav-words a{
+    color: #065cad;
+    font-weight: 600;
+}
+
+.nav-words a:hover {
+    color: var(--contrast-color);
+}
+
+  /* SHOWCASE */
+  
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: var(--terciary-color);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 2rem;
+    border: 1px solid #fff;
+  }
+  
+  .btn:hover {
+      background-color: var(--contrast-color);
+  }
+  
+  .showcase-container, .showcase-container .showcase-bg{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .showcase {
+    width: 70%;
+    display: flex;
+    max-width: 150rem;
+    min-height:  55rem;
+    background: url("../assets/covid.jpg") no-repeat center center/cover;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  .showcase-bg {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background-color: rgba(31, 30, 30, 0.322);
+      border-radius: 2rem;
+      padding: 3rem;
+      transition: 0.4s;
+      border: #F9F9F9 2px solid;
+      font-size: 1.8rem;
+  }
+
+  .showcase-bg:hover {
+    transform: scale(1.02);
+  }
+
+  /* .dark-theme .showcase-bg {
+    background-color: rgba(103, 164, 199, 0.5);
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 3rem;
+    border: #222222 2px solid;
+    color: #222222;
+    transition: 0.4s;
+}
+   */
+  .showcase h2,
+  .showcase p {
+    margin-bottom: 2rem;
+  }
+  
+  .showcase .btn {
+    margin-top: 20px;
+  }
