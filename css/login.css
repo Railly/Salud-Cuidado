@@ -91,8 +91,31 @@ body {
     color: darkgrey;
   }
   
+  .login-box .btn:hover {
+    color: #fff;
+    transition: 0.4s;
+    background-color: var(--contrast-color);
+    transform: scale(1.07);
+  }
+
   .login-box a:hover {
     color: #fff;
+    transition: 0.4s;
+    transform: scale(1.07);
+  }
+
+  .btn {
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: var(--secondary-color);
+    font-size: 15px;
+    border-radius: 2rem;
+    border: 1px solid #fff;
   }
 
 ::-webkit-input-placeholder { color: rgb(104, 174, 192); } 
