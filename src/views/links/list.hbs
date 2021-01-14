@@ -1,0 +1,19 @@
+<div class="container p-4">
+    <div class="row">
+
+        {{#each users}}
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase">Datos Personales</h5>
+                        <span class="badge bg-dark">Nombre</span>
+                        <p class="card-text">{{nombre}} {{apellido}}</p>
+                        <span class="badge bg-dark">Correo Electrónico</span>
+                        <p class="card-text">{{correo_electronico}}</p>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

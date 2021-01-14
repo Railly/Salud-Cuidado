@@ -1,0 +1,31 @@
+body{
+    background: rgb(248, 241, 241);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.index {
+    width: auto;
+    height: 91.5vh;
+}
+
+.goal, .bienvenidos{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    opacity: .8;
+}
+
+.masthead {
+    color: rgb(0,0,0);
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    background: url('/img/mask.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* p {
+    font-family: 'Montserrat', sans-serif;
+} */

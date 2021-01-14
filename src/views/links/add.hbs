@@ -1,0 +1,137 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-5 mx-auto">
+            <form action="/links/add" method="POST">
+                <div class="card my-3" style="width: 32rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Datos Personales</h5>
+                        <h6 class="card-subtitle my-3 text-muted">Edad: </h6>
+                        <div class="form-group">
+                            <input type="number" min="12" max="110" class="form-control" name="edad" placeholder="Ingrese su edad" autofocus>
+                        </div>
+                        <h6 class="card-subtitle my-3 text-muted">Sexo: </h6>
+                        <div class="form-group form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="sexoMasculino" id="sexo1">
+                            <label for="sexo1" class="form-check-label">Masculino</label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="sexoFemenino" id="sexo2">
+                            <label for="sexo2" class="form-check-label">Femenino</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3" style="width: 32rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Factores de Riesgo</h5>
+                        <h6 class="card-subtitle my-4 text-muted">Marque en caso presente alguna de ellas: </h6>
+                        <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="arterio" name="arterioesclerosis">
+                            <label class="form-check-label" for="arterio">
+                                Arterioesclerosis
+                            </label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="diabe" name="diabetes">
+                            <label class="form-check-label" for="diabe">
+                                Diabetes
+                            </label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="cardio" name="cardiovascular">
+                            <label class="form-check-label" for="cardio">
+                                Enfermedad Cardiovascular
+                            </label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="hepa" name="hepatica">
+                            <label class="form-check-label" for="hepa">
+                                Enfermedad Hepatica
+                            </label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="neuro" name="neurologica">
+                            <label class="form-check-label" for="neuro">
+                                Enfermedad Neurologica
+                            </label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="pulmon" name="pulmonar">
+                            <label class="form-check-label" for="pulmon">
+                                Enfermedad Pulmonar
+                            </label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="ren" name="renal">
+                            <label class="form-check-label" for="ren">
+                                Enfermedad Renal
+                            </label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="hiper" name="hipertension">
+                            <label class="form-check-label" for="hiper">
+                                Hipertension
+                            </label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inmuno" name="inmunodeficiencia">
+                            <label class="form-check-label" for="inmuno">
+                                Inmunodeficiencia
+                            </label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="obes" name="obesidad">
+                            <label class="form-check-label" for="obes">
+                                Obesidad
+                            </label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="can" name="cancer">
+                            <label class="form-check-label" for="can">
+                                Cancer
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3" style="width: 32rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tipo de Dolor</h5>
+                        <h6 class="card-subtitle my-3 text-muted">Marque en caso presente alguna de ellas: </h6>
+                        <div class="form-group form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="pecho" name="dolorPecho">
+                            <label for="pecho" class="form-check-label">Dolor de pecho</label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="cabeza" name="dolorCabeza">
+                            <label for="cabeza" class="form-check-label">Dolor de cabeza</label>
+                        </div>
+                        <div class="form-group form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="garganta" name="dolorGarganta">
+                            <label for="garganta" class="form-check-label">Dolor de garganta</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3" style="width: 32rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tasa Respiratoria</h5>
+                        <h6 class="card-subtitle my-3 text-muted">Ingrese el valor en respiraciones/minuto</h6>
+                        <div class="form-group">
+                            <input type="number" min="8" max="30" class="form-control" name="tasaRespiratoria" placeholder="Ingrese su tasa respiratoria">
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3" style="width: 32rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Saturación de Oxígeno</h5>
+                        <h6 class="card-subtitle my-3 text-muted">Ingrese el valor en porcentaje</h6>
+                        <div class="form-group">
+                            <input type="number" min="80" max="100" class="form-control" name="saturacionOxigeno" placeholder="Ingrese su saturación de oxígeno">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
