@@ -38,6 +38,10 @@ Repositorio del proyecto del curso de Calidad de Software 2020-II
 
 `npm run dev`
 
+9. Ejecutar el siguiente comando:
+
+`npm -i nodemon -D`
+
 10. Abre el navegador e ingresa a la siguiente dirección:
 
 `localhost/4000/` 
