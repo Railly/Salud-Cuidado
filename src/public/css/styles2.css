@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+    margin-left: 100px;
+    margin-top: 100px;
+    transition: transform .5s;
+}
+.card-title:hover {
+    transform: scale(1.02); 
+}
+
+.card-text{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 70px;
+    font-size: 120%;
+    transition: transform .5s;
+}
+.card-text:hover {
+    transform: scale(1.02); 
+}
+
+.card-img{
+    filter: blur(10px);
+}

@@ -19,13 +19,39 @@ body{
     min-height: 30rem;
     width: 100%;
     height: 100%;
-    padding-top: 8rem;
+    padding-top: 4rem;
     background: url('/img/mask.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+.btn-primary{
+    width: 290px;
+    height: 40px;
+    font-size: 20px;
+    margin: auto;
+    border-style: none;
+    background: #6a994e;
+    color: white;
+    transition: all 300ms;
+    border-radius: 10px;
+    outline: none;
 }
 
+.btn-primary:hover{
+    background: #a7c957;
+    transition: all 300ms;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 0px green;
+}
+
+.btn-primary:active{
+    background: #93A994;
+    transition: all 100ms;
+    color: #607D69;
+    transform: scale(0.9);
+}
 /* p {
     font-family: 'Montserrat', sans-serif;
 } */
